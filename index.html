@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberCode</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080d18;
+      color: white;
+    }
+    header {
+      padding: 24px;
+      text-align: center;
+      background: #101b30;
+      border-bottom: 1px solid #00bfff;
+    }
+    header h1 { color: #00c8ff; margin: 0; }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 18px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      background: #14233c;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+    nav a:hover { background: #007da8; }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 15px;
+    }
+    .hero h2 { font-size: 36px; }
+    .blue { color: #00c8ff; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      padding: 24px;
+      background: #101b30;
+      border: 1px solid #233c5e;
+      border-radius: 12px;
+    }
+    .card h3 { color: #00c8ff; }
+    pre {
+      background: #050912;
+      padding: 14px;
+      overflow-x: auto;
+      border-radius: 8px;
+      color: #8bffbb;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #aab8cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> &lt;/&gt; CyberCode</h1>
+    <p>Gələcəyini kodla qur!</p>
+  </header>
+
+  <nav>
+    <a href="#python">Python</a>
+    <a href="#html">HTML</a>
+    <a href="#c">C dili</a>
+    <a href="#cpp">C++</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>Proqramlaşdırma dünyasına <span class="blue">xoş gəlmisən!</span></h2>
+      <p>Öyrən, kod yaz və öz layihələrini yarat.</p>
+    </section>
+
+    <h2>Proqramlaşdırma dərsləri</h2>
+    <div class="cards">
+      <section class="card" id="python">
+        <h3>Python</h3>
+        <p>Sadə və güclü proqramlaşdırma dili.</p>
+        <pre>print("Salam Dünya!")</pre>
+      </section>
+      <section class="card" id="html">
+        <h3>HTML</h3>
+        <p>Veb səhifələrin əsasını öyrən.</p>
+        <pre>&lt;h1&gt;Salam Dünya!&lt;/h1&gt;</pre>
+      </section>
+      <section class="card" id="c">
+        <h3>C dili</h3>
+        <p>Proqramlaşdırmanın əsaslarını öyrən.</p>
+        <pre>#include &lt;stdio.h&gt;
+int main() {
+  printf("Salam Dünya!");
+  return 0;
+}</pre>
+      </section>
+      <section class="card" id="cpp">
+        <h3>C++</h3>
+        <p>Güclü proqramlar yaratmağa başla.</p>
+        <pre>#include &lt;iostream&gt;
+int main() {
+  std::cout &lt;&lt; "Salam Dünya!";
+  return 0;
+}</pre>
+      </section>
+    </div>
+  </main>
+
+  <footer>© 2026 CyberCode | Bütün hüquqlar qorunur</footer>
+</body>
+</html>
